@@ -5,9 +5,7 @@ account: chundychang
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 5571394
-bundleId: 5703742
+bundleId: 5575627
 url: https://chundychang.shinyapps.io/simsbabby/
-when: 1647728065.747
-lastSyncTime: 1647728065.747
-asMultiple: FALSE
-asStatic: FALSE
+when: 1644802308.48786
+lastSyncTime: 1644802308.48786

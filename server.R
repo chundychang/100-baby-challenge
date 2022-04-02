@@ -3,7 +3,7 @@ server <- function(input, output) {
 # Child Aspiration
     random_child_asp <- eventReactive(input$do, {  
         child_asp <- c("Rambunctious Scamp", "Whiz Kid", "Artistic Prodigy", "Social Butterfly")
-        sample(child_asp, 1, replace = FALSE)
+        sample(child_asp, 1, replace = T)
         
     })
     output$child_aspiration <- renderTable({
@@ -14,8 +14,8 @@ server <- function(input, output) {
 
 # Adult Aspiration
     random_adult_asp <- eventReactive(input$do1, {  
-                adult_asp <- c("Friend of the Animals", "Extreme Sports Enthusiast", "Body Builder", "Painter Extraordinaire", "Lady of the Knits", "Master Maker", "Musical Genius", "Bestselling Author", "Master Actor", "Public Enemy", "Chief of Mischief", "Vampire Family", "Successful Lineage", "Big Happy Family", "Super Parent", "Master Chef", "Master Mixologist", "Fabulously Wealthy", "Mansion Baron", "Academic", "Spellcraft & Sorcery", "Archaeology Scholar", "Renaissance Sim", "Nerd Brain", "Computer Whiz", "Master Vampire", "Perfectly Pristine", "Beach Life", "StrangerVille Mystery", "Mt Komorebi Sightseer", "Fabulously Filthy", "Soulmate", "Serial Romantic", "Eco Innovator", "Jungle Explorer", "Outdoor Enthusiast", "Purveyor of Potions", "Freelance Botanist", "The Curator", "The Angling Ace", "Joke Star", "Party Animal", "Friend to the World", "City Native", "Good Vampire", "World-Famous Celebrity", "Leader of the Pack", "Hope VS Order", "Galactic Privateer")
-        sample(adult_asp, 1, replace = FALSE)
+                adult_asp <- c("Friend of the Animals", "Extreme Sports Enthusiast", "Body Builder", "Painter Extraordinaire", "Lord/Lady of the Knits", "Master Maker", "Musical Genius", "Bestselling Author", "Master Actor", "Public Enemy", "Chief of Mischief", "Villainous Valentine", "Vampire Family", "Successful Lineage", "Big Happy Family", "Super Parent", "Master Chef", "Master Mixologist", "Fabulously Wealthy", "Mansion Baron", "Academic", "Spellcraft & Sorcery", "Archaeology Scholar", "Renaissance Sim", "Nerd Brain", "Computer Whiz", "Master Vampire", "Perfectly Pristine", "Beach Life", "StrangerVille Mystery", "Mt Komorebi Sightseer", "Fabulously Filthy", "Soulmate", "Serial Romantic", "Eco Innovator", "Jungle Explorer", "Country Caretaker", "Outdoor Enthusiast", "Purveyor of Potions", "Freelance Botanist", "The Curator", "The Angling Ace", "Joke Star", "Party Animal", "Friend to the World", "City Native", "Good Vampire", "Neighborhood Confidante", "World-Famous Celebrity", "Leader of the Pack", "Hope VS Order", "Galactic Privateer", "Self Care Specialist", "Inner Peace", "Zen Guru")
+        sample(adult_asp, 1, replace = T)
     })
     output$adult_aspiration <- renderTable({
         name <- input$text1
@@ -116,8 +116,8 @@ server <- function(input, output) {
     
     # Career
     random_career <- eventReactive(input$do10, {
-        career <- c("Unemployed", "Actor", "Detective", "Doctor", "Scientist", "Astronaut", "Athlete", "Business", "Civil Designer", "Conservationist", "Criminal", "Critic", "Culinary", "Entertainer", "Education", "Engineer", "Freelancer", "Gardener", "Law", "Military", "Painter", "Politician", "Salaryperson", "Secret Agent", "Social Media", "Style Influencer", "Tech Guru", "Writer", "Babysitter", "Barista", "Diver", "Fast Food Employee", "Fisherman", "Lifeguard", "Manual Laborer", "Retail Employee")
-        sample(career, 1, replace=FALSE)
+        career <- c("Unemployed", "Actor/Actress", "Detective", "Doctor", "Interior Decorator", "Scientist", "Astronaut", "Athlete", "Business", "Civil Designer", "Conservationist", "Criminal", "Critic", "Culinary", "Entertainer", "Education", "Engineer", "Freelancer", "Gardener", "Law", "Military", "Painter", "Politician", "Salaryperson", "Secret Agent", "Social Media", "Style Influencer", "Tech Guru", "Writer", "Babysitter", "Barista", "Diver", "Fast Food Employee", "Fisherman", "Lifeguard", "Manual Laborer", "Retail Employee")
+        sample(career, 1, replace=T)
     })
     output$career <- renderTable({
         name <- input$text3
